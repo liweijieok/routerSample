@@ -28,7 +28,14 @@ public class Module2Activity1 extends AppCompatActivity {
         SignRouterManager.getRouter().launch(this, "router/module2/page2");
     }
 
+    public void launchM1Act2(View view) {
+        SignRouterManager.getRouter().launch(this, "router/module1/page2");
+    }
+
     public void getModule1Data(View view) {
+        if (!SignProviderManager.getManager().hasModule1()) {
+            return;
+        }
         String tip = SignProviderManager.getManager().getModule1Provider().test();
         Toast.makeText(this,tip,Toast.LENGTH_SHORT).show();
     }

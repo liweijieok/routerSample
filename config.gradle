@@ -16,4 +16,9 @@ ext{
             constraintlayout :'com.android.support.constraint:constraint-layout:1.0.2'
 
     ]
+
+    isModule1Debug = false
+    //demo中只是配置了module2，自己可以尝试配置module1
+    isModule2Debug = false
+
 }

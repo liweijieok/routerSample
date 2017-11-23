@@ -23,6 +23,16 @@ dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     testImplementation 'junit:junit:4.12'
-    implementation project(':module1')
-    implementation project(':module2')
+    boolean hasBase
+    if (!rootProject.ext.isModule2Debug) {
+        compile project(':module2')
+        hasBase = true
+    }
+    if (!rootProject.ext.isModule1Debug) {
+        compile project(':module1')
+    }
+    if (!hasBase) {
+        compile project(':base')
+    }
+
 }

@@ -28,12 +28,19 @@ public final class SignProviderManager {
 
     private IModule2Provider module2Provider;
 
+    public boolean hasModule1() {
+        return getModule1Provider() != null;
+    }
 
     public IModule1Provider getModule1Provider() {
         if (module1Provider == null) {
             module1Provider = (IModule1Provider) SignRouterManager.getRouter().getProvider("router/module1/provider");
         }
         return module1Provider;
+    }
+
+    public boolean hasModule2() {
+        return getModule2Provider() != null;
     }
 
     public IModule2Provider getModule2Provider() {

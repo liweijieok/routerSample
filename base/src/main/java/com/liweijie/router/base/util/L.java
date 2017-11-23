@@ -1,6 +1,7 @@
 package com.liweijie.router.base.util;
 
 import android.text.TextUtils;
+import android.util.Log;
 
 /**
  * 作者：黎伟杰-子然 on 2017/11/23.
@@ -29,9 +30,9 @@ public final class L {
             }
         }
         if (!TextUtils.isEmpty(tag)) {
-            L.e(TAG + tag, msg);
+            Log.e(TAG + tag, sb.toString());
         } else {
-            L.e(TAG + tag, msg);
+            Log.e(TAG , sb.toString());
         }
 
     }

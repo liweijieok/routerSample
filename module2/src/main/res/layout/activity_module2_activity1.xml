@@ -21,6 +21,12 @@
         android:layout_height="wrap_content"
         android:onClick="launchM2Act2"
         android:text="启动同模块的Module2的Activity2"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="launchM1Act2"
+        android:text="启动Module1的Activity2，并且传递数据过去和传递数据回来"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
