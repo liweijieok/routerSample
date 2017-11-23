@@ -1,0 +1,19 @@
+ext{
+
+    android = [
+            compileSdkVersion       : 25,
+            buildToolsVersion       : '25.0.2',
+            minSdkVersion           : 15,
+            targetSdkVersion        : 25,
+            androidSupportSdkVersion: "25.2.0",
+            gradleVersion      : '3.0.0-beta5'
+
+    ]
+
+    dependencies = [
+            appcompatv7 :'com.android.support:appcompat-v7:25.2.0',
+            supportv4 :'com.android.support:support-v4:25.2.0',
+            constraintlayout :'com.android.support.constraint:constraint-layout:1.0.2'
+
+    ]
+}
